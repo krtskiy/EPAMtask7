@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<countries>
-    <country>
-        <country_name>France</country_name>
-        <population>66.9</population>
-    </country>
-    <country>
-        <country_name>Ukraine</country_name>
-        <population>41.9</population>
-    </country>
-    <country>
-        <country_name>Russia</country_name>
-        <population>144.5</population>
-    </country>
-    <country>
-        <country_name>Belarus</country_name>
-        <population>9.4</population>\
-    </country>
-</countries>
+<Bank>
 
+    <Deposit type="Срочный">
+        <Name>MonoBank</Name>
+        <Country>Ukraine</Country>
+        <Depositor>Денис Корецкий</Depositor>
+        <AccountId>1</AccountId>
+        <AmountOnDeposit>42000</AmountOnDeposit>
+        <Profitability>10%</Profitability>
+        <TimeConstraints>12</TimeConstraints>
+    </Deposit>
+
+    <Deposit type="Накопительный">
+        <Name>ПриватБанкРоссия</Name>
+        <Country>Russia</Country>
+        <Depositor>Дядя Фёдор</Depositor>
+        <AccountId>2</AccountId>
+        <AmountOnDeposit>228000</AmountOnDeposit>
+        <Profitability>5%</Profitability>
+        <TimeConstraints>24</TimeConstraints>
+    </Deposit>
+
+    <Deposit type="Сберегательный">
+        <Name>CreditAgricole</Name>
+        <Country>France</Country>
+        <Depositor>Петюа Жан-Пяточкин</Depositor>
+        <AccountId>3</AccountId>
+        <AmountOnDeposit>32200</AmountOnDeposit>
+        <Profitability>13%</Profitability>
+        <TimeConstraints>6</TimeConstraints>
+    </Deposit>
+</Bank>
