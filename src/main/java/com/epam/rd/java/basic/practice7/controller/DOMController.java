@@ -1,4 +1,4 @@
-package com.epam.rd.java.basic.practice7.example.controller;
+package com.epam.rd.java.basic.practice7.controller;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import com.epam.rd.java.basic.practice7.example.constants.Constants;
+import com.epam.rd.java.basic.practice7.constants.Constants;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -21,10 +21,10 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.epam.rd.java.basic.practice7.example.constants.XML;
-import com.epam.rd.java.basic.practice7.example.entity.Answer;
-import com.epam.rd.java.basic.practice7.example.entity.Question;
-import com.epam.rd.java.basic.practice7.example.entity.Test;
+import com.epam.rd.java.basic.practice7.constants.XML;
+import com.epam.rd.java.basic.practice7.entity.Answer;
+import com.epam.rd.java.basic.practice7.entity.Question;
+import com.epam.rd.java.basic.practice7.entity.Test;
 
 /**
  * Controller for DOM parser.

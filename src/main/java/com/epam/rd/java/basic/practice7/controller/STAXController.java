@@ -1,4 +1,4 @@
-package com.epam.rd.java.basic.practice7.example.controller;
+package com.epam.rd.java.basic.practice7.controller;
 
 import javax.xml.namespace.QName;
 import javax.xml.stream.XMLEventReader;
@@ -11,13 +11,13 @@ import javax.xml.stream.events.StartElement;
 import javax.xml.stream.events.XMLEvent;
 import javax.xml.transform.stream.StreamSource;
 
-import com.epam.rd.java.basic.practice7.example.constants.Constants;
+import com.epam.rd.java.basic.practice7.constants.Constants;
+import com.epam.rd.java.basic.practice7.constants.XML;
+import com.epam.rd.java.basic.practice7.entity.Question;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.epam.rd.java.basic.practice7.example.constants.XML;
-import com.epam.rd.java.basic.practice7.example.entity.Answer;
-import com.epam.rd.java.basic.practice7.example.entity.Question;
-import com.epam.rd.java.basic.practice7.example.entity.Test;
+import com.epam.rd.java.basic.practice7.entity.Answer;
+import com.epam.rd.java.basic.practice7.entity.Test;
 
 /**
  * Controller for StAX parser.

@@ -1,4 +1,4 @@
-package com.epam.rd.java.basic.practice7.example;
+package com.epam.rd.java.basic.practice7;
 
 /**
  * Demo class to run project WO command line.

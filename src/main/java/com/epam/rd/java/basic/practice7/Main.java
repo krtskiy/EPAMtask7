@@ -1,10 +1,9 @@
-package com.epam.rd.java.basic.practice7.example;
+package com.epam.rd.java.basic.practice7;
 
-import com.epam.rd.java.basic.practice7.example.controller.DOMController;
-import com.epam.rd.java.basic.practice7.example.controller.SAXController;
-import com.epam.rd.java.basic.practice7.example.controller.STAXController;
-import com.epam.rd.java.basic.practice7.example.entity.Test;
-import com.epam.rd.java.basic.practice7.example.util.Sorter;
+import com.epam.rd.java.basic.practice7.controller.*;
+import com.epam.rd.java.basic.practice7.entity.Test;
+import com.epam.rd.java.basic.practice7.entity.Test;
+import com.epam.rd.java.basic.practice7.util.Sorter;
 
 /**
  * Entry point for practice 7 (simple version).

@@ -1,4 +1,4 @@
-package com.epam.rd.java.basic.practice7.example.constants;
+package com.epam.rd.java.basic.practice7.constants;
 
 /**
  * Holds application constants.

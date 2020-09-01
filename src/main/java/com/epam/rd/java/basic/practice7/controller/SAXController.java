@@ -1,4 +1,4 @@
-package com.epam.rd.java.basic.practice7.example.controller;
+package com.epam.rd.java.basic.practice7.controller;
 
 import java.io.IOException;
 
@@ -6,15 +6,15 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-import com.epam.rd.java.basic.practice7.example.constants.Constants;
+import com.epam.rd.java.basic.practice7.constants.XML;
+import com.epam.rd.java.basic.practice7.entity.Answer;
+import com.epam.rd.java.basic.practice7.constants.Constants;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import com.epam.rd.java.basic.practice7.example.constants.XML;
-import com.epam.rd.java.basic.practice7.example.entity.Answer;
-import com.epam.rd.java.basic.practice7.example.entity.Question;
-import com.epam.rd.java.basic.practice7.example.entity.Test;
+import com.epam.rd.java.basic.practice7.entity.Question;
+import com.epam.rd.java.basic.practice7.entity.Test;
 
 /**
  * Controller for SAX parser.

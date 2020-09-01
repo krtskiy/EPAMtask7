@@ -1,13 +1,13 @@
-package com.epam.rd.java.basic.practice7.example.util;
+package com.epam.rd.java.basic.practice7.util;
 
 import java.util.Collections;
 import java.util.Comparator;
 
-import com.epam.rd.java.basic.practice7.example.constants.Constants;
-import com.epam.rd.java.basic.practice7.example.controller.DOMController;
-import com.epam.rd.java.basic.practice7.example.entity.Answer;
-import com.epam.rd.java.basic.practice7.example.entity.Question;
-import com.epam.rd.java.basic.practice7.example.entity.Test;
+import com.epam.rd.java.basic.practice7.constants.Constants;
+import com.epam.rd.java.basic.practice7.controller.DOMController;
+import com.epam.rd.java.basic.practice7.entity.Answer;
+import com.epam.rd.java.basic.practice7.entity.Question;
+import com.epam.rd.java.basic.practice7.entity.Test;
 
 /**
  * Contains static methods for sorting.
@@ -94,8 +94,7 @@ public class Sorter {
 
 	public static void main(String[] args) throws Exception {
 		// Test.xml --> Test object
-		DOMController domController = new DOMController(
-				Constants.VALID_XML_FILE);
+		DOMController domController = new DOMController(Constants.VALID_XML_FILE);
 		domController.parse(false);
 		Test test = domController.getTest();
 

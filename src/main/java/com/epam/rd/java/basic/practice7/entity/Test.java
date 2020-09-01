@@ -1,4 +1,4 @@
-package com.epam.rd.java.basic.practice7.example.entity;
+package com.epam.rd.java.basic.practice7.entity;
 
 import java.util.ArrayList;
 import java.util.List;
