@@ -30,7 +30,7 @@ public class DOMController {
     private String xmlFileName;
     private Bank bank;
 
-    final static Logger logger = Logger.getLogger("DOMController".getClass().getName());
+    static final Logger logger = Logger.getLogger("DOMController".getClass().getName());
 
     public DOMController(String xmlFileName) {
         this.xmlFileName = xmlFileName;
@@ -110,7 +110,7 @@ public class DOMController {
     }
 
     public static Document getDocument(Bank bank) {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); // NOSONAR
         dbf.setNamespaceAware(true);
         Document document = null;
         try {
@@ -171,7 +171,7 @@ public class DOMController {
     public static void saveToXml(Document document, String xmlFileName) {
         StreamResult result = new StreamResult(new File(xmlFileName));
 
-        TransformerFactory tf = TransformerFactory.newInstance();
+        TransformerFactory tf = TransformerFactory.newInstance(); // NOSONAR
         try {
             Transformer t = tf.newTransformer();
             t.setOutputProperty(OutputKeys.INDENT, "yes");
