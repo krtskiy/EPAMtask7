@@ -180,6 +180,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="?" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/jmushmyh_task7$Tests_in__jmushmyh_task7_test_.ic" NAME="Tests in 'jmushmyh-task7.test' Coverage Results" MODIFIED="1599057882879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/jmushmyh_task7$Tests_in__jmushmyh_task7_test_.ic" NAME="Tests in 'jmushmyh-task7.test' Coverage Results" MODIFIED="1599058684955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
