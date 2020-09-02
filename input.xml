@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p7:Bank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:p7="http://nure.ua/your_last_name/practice7"
+      xsi:schemaLocation="http://nure.ua/your_last_name/practice7 input.xsd">
+
+    <Deposit>
+        <Name>MonoBank</Name>
+        <Country>Ukraine</Country>
+        <Depositor>Денис Корецкий</Depositor>
+        <AccountId>1</AccountId>
+        <Type>Срочный</Type>
+        <AmountOnDeposit>42000.00</AmountOnDeposit>
+        <Profitability>0.1</Profitability>
+        <TimeConstraints>12</TimeConstraints>
+    </Deposit>
+
+    <Deposit>
+        <Name>ПриватБанкРоссия</Name>
+        <Country>Russia</Country>
+        <Depositor>Дядя Фёдор</Depositor>
+        <AccountId>2</AccountId>
+        <Type>Накопительный</Type>
+        <AmountOnDeposit>228000.00</AmountOnDeposit>
+        <Profitability>0.05</Profitability>
+        <TimeConstraints>24</TimeConstraints>
+    </Deposit>
+
+    <Deposit>
+        <Name>CreditAgricole</Name>
+        <Country>France</Country>
+        <Depositor>Петюа Жан-Пяточкин</Depositor>
+        <AccountId>3</AccountId>
+        <Type>Сберегательный</Type>
+        <AmountOnDeposit>32200.00</AmountOnDeposit>
+        <Profitability>0.135</Profitability>
+        <TimeConstraints>6</TimeConstraints>
+    </Deposit>
+</p7:Bank>
