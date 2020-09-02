@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://nure.ua/your_last_name/practice7"
+			xmlns:tns="http://nure.ua/your_last_name/practice7">
+
+
+	<xsd:element name="Bank">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Deposit"
+							 type="tns:Deposit"
+							 maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:complexType name="Deposit">
+		<xsd:sequence>
+			<xsd:element name="Name" type="xsd:string"/>
+			<xsd:element name="Country" type="xsd:string"/>
+			<xsd:element name="Depositor" type="xsd:string"/>
+			<xsd:element name="AccountId" type="xsd:int"/>
+			<xsd:element name="Type" type="xsd:string"/>
+			<xsd:element name="AmountOnDeposit" type="xsd:double"/>
+			<xsd:element name="Profitability" type="xsd:double"/>
+			<xsd:element name="TimeConstraints" type="xsd:int"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+</xsd:schema>
