@@ -1,5 +1,6 @@
 package com.epam.rd.java.basic.practice7;
 
+<<<<<<< Updated upstream
 import com.epam.rd.java.basic.practice7.controller.*;
 import com.epam.rd.java.basic.practice7.entity.Test;
 import com.epam.rd.java.basic.practice7.entity.Test;
@@ -32,6 +33,18 @@ public class Main {
 		DOMController domController = new DOMController(xmlFileName);
 		domController.parse(true);
 		Test test = domController.getTest();
+=======
+import com.epam.rd.java.basic.practice7.entity.Bank;
+import com.epam.rd.java.basic.practice7.entity.Deposit;
+
+public final class Main {
+
+    public static void main(final String[] args) {
+        Bank bank = new Bank();
+        Deposit deposit = new Deposit();
+        bank.getDeposits();
+        bank.toString();
+>>>>>>> Stashed changes
 
 		// sort (case 1)
 		Sorter.sortQuestionsByQuestionText(test);
