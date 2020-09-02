@@ -2,8 +2,6 @@ package com.epam.rd.java.basic.practice7;
 
 <<<<<<< Updated upstream
 import com.epam.rd.java.basic.practice7.controller.*;
-import com.epam.rd.java.basic.practice7.entity.Test;
-import com.epam.rd.java.basic.practice7.entity.Test;
 import com.epam.rd.java.basic.practice7.util.Sorter;
 
 /**
