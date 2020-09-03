@@ -1,6 +1,5 @@
 package com.epam.rd.java.basic.practice7.controller;
 
-import com.epam.rd.java.basic.practice7.constants.Constants;
 import com.epam.rd.java.basic.practice7.constants.XML;
 import com.epam.rd.java.basic.practice7.entity.Bank;
 import com.epam.rd.java.basic.practice7.entity.Deposit;
@@ -33,7 +32,7 @@ public class DOMController {
     private String xmlFileName;
     private Bank bank;
 
-    static final Logger logger = Logger.getLogger("DOMController".getClass().getName());
+    private static final Logger logger = Logger.getLogger("DOMController".getClass().getName());
 
     public DOMController(String xmlFileName) {
         this.xmlFileName = xmlFileName;
@@ -47,14 +46,14 @@ public class DOMController {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); // NOSONAR
         dbf.setNamespaceAware(true);
 
-        if (validate) {
-            try {
-                dbf.setFeature(Constants.FEATURE_TURN_VALIDATION_ON, true);
-                dbf.setFeature(Constants.FEATURE_TURN_SCHEMA_VALIDATION_ON, true);
-            } catch (ParserConfigurationException e) {
-                logger.severe(e.getMessage());
-            }
-        }
+//        if (validate) {
+//            try {
+//                dbf.setFeature(Constants.FEATURE_TURN_VALIDATION_ON, true);
+//                dbf.setFeature(Constants.FEATURE_TURN_SCHEMA_VALIDATION_ON, true);
+//            } catch (ParserConfigurationException e) {
+//                logger.severe(e.getMessage());
+//            }
+//        }
 
         try {
             DocumentBuilder db = dbf.newDocumentBuilder();

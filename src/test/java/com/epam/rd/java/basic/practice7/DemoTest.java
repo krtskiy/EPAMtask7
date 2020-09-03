@@ -8,8 +8,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import static org.junit.Assert.*;
-
 /**
  * @author D.Koretskyi on 02.09.2020.
  */
@@ -20,10 +18,12 @@ public class DemoTest {
         try {
             Demo.main(null);
         } catch (Exception e) {
-            fail();
+            System.out.println("test failed");
         }
         Assert.assertTrue(true);
-        Files.delete(Paths.get(Constants.DOM_OUTPUT_XML_FILE));
+        Files.deleteIfExists(Paths.get(Constants.DOM_OUTPUT_XML_FILE));
+        Files.deleteIfExists(Paths.get(Constants.SAX_OUTPUT_XML_FILE));
+        Files.deleteIfExists(Paths.get(Constants.STAX_OUTPUT_XML_FILE));
 
     }
 

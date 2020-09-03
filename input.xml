@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<p7:Bank xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xmlns:p7="http://nure.ua/your_last_name/practice7"
-      xsi:schemaLocation="http://nure.ua/your_last_name/practice7 input.xsd">
+
+<Bank>
     <Deposit>
         <Name>MonoBank</Name>
         <Country>Украина</Country>
@@ -34,4 +33,4 @@
         <Profitability>0.135</Profitability>
         <TimeConstraints>6</TimeConstraints>
     </Deposit>
-</p7:Bank>
+</Bank>
