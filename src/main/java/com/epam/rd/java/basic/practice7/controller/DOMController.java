@@ -15,7 +15,10 @@ import org.xml.sax.helpers.DefaultHandler;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.*;
+import javax.xml.transform.OutputKeys;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.File;
@@ -43,14 +46,15 @@ public class DOMController {
     public void parse(boolean validate) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); // NOSONAR
         dbf.setNamespaceAware(true);
-//        if (validate) {
-//            try {
-//                dbf.setFeature(Constants.FEATURE_TURN_VALIDATION_ON, true);
-//                dbf.setFeature(Constants.FEATURE_TURN_SCHEMA_VALIDATION_ON, true);
-//            } catch (ParserConfigurationException e) {
-//                logger.severe(e.getMessage());
-//            }
-//        }
+
+        if (validate) {
+            try {
+                dbf.setFeature(Constants.FEATURE_TURN_VALIDATION_ON, true);
+                dbf.setFeature(Constants.FEATURE_TURN_SCHEMA_VALIDATION_ON, true);
+            } catch (ParserConfigurationException e) {
+                logger.severe(e.getMessage());
+            }
+        }
 
         try {
             DocumentBuilder db = dbf.newDocumentBuilder();

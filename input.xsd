@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            >
-
+            targetNamespace="http://nure.ua/your_last_name/practice7"
+            xmlns:tns="http://nure.ua/your_last_name/practice7">
 
     <xsd:element name="Bank">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="Deposit"
-
+                             type="tns:Deposit"
                              maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
@@ -18,12 +18,34 @@
             <xsd:element name="Name" type="xsd:string"/>
             <xsd:element name="Country" type="xsd:string"/>
             <xsd:element name="Depositor" type="xsd:string"/>
-            <xsd:element name="AccountId" type="xsd:int"/>
-            <xsd:element name="Type" type="xsd:string"/>
-            <xsd:element name="AmountOnDeposit" type="xsd:double"/>
+            <xsd:element name="AccountId">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:int">
+                        <xsd:pattern value="([0-9])+"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Type">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="Срочный"/>
+                        <xsd:enumeration value="Накопительный"/>
+                        <xsd:enumeration value="Сберегательный"/>
+                        <xsd:enumeration value="Рассчетный"/>
+                        <xsd:enumeration value="Металлический"/>
+                        <xsd:enumeration value="До востребования"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="AmountOnDeposit">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:double">
+                        <xsd:minInclusive value="0"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
             <xsd:element name="Profitability" type="xsd:double"/>
             <xsd:element name="TimeConstraints" type="xsd:int"/>
         </xsd:sequence>
     </xsd:complexType>
-
 </xsd:schema>
