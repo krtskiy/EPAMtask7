@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Bank>
-<Deposit>
-<Name>ПриватБанкРоссия</Name>
-<Country>Russia</Country>
-<Depositor>Дядя Фёдор</Depositor>
-<AccountId>13</AccountId>
-<Type>Накопительный</Type>
-<AmountOnDeposit>228000.0</AmountOnDeposit>
-<Profitability>0.05</Profitability>
-<TimeConstraints>24.0</TimeConstraints>
-</Deposit>
-<Deposit>
-<Name>CreditAgricole</Name>
-<Country>France</Country>
-<Depositor>Петюа Жан-Пяточкин</Depositor>
-<AccountId>420</AccountId>
-<Type>Сберегательный</Type>
-<AmountOnDeposit>32200.0</AmountOnDeposit>
-<Profitability>0.135</Profitability>
-<TimeConstraints>6.0</TimeConstraints>
-</Deposit>
-<Deposit>
-<Name>MonoBank</Name>
-<Country>Украина</Country>
-<Depositor>Денис Корецкий</Depositor>
-<AccountId>777</AccountId>
-<Type>Срочный</Type>
-<AmountOnDeposit>42000.0</AmountOnDeposit>
-<Profitability>0.1</Profitability>
-<TimeConstraints>12.0</TimeConstraints>
-</Deposit>
+    <Deposit>
+        <Name>ПриватБанкРоссия</Name>
+        <Country>Russia</Country>
+        <Depositor>Дядя Фёдор</Depositor>
+        <AccountId>13</AccountId>
+        <Type>Накопительный</Type>
+        <AmountOnDeposit>228000.0</AmountOnDeposit>
+        <Profitability>0.05</Profitability>
+        <TimeConstraints>24.0</TimeConstraints>
+    </Deposit>
+    <Deposit>
+        <Name>CreditAgricole</Name>
+        <Country>France</Country>
+        <Depositor>Петюа Жан-Пяточкин</Depositor>
+        <AccountId>420</AccountId>
+        <Type>Сберегательный</Type>
+        <AmountOnDeposit>32200.0</AmountOnDeposit>
+        <Profitability>0.135</Profitability>
+        <TimeConstraints>6.0</TimeConstraints>
+    </Deposit>
+    <Deposit>
+        <Name>MonoBank</Name>
+        <Country>Украина</Country>
+        <Depositor>Денис Корецкий</Depositor>
+        <AccountId>777</AccountId>
+        <Type>Срочный</Type>
+        <AmountOnDeposit>42000.0</AmountOnDeposit>
+        <Profitability>0.1</Profitability>
+        <TimeConstraints>12.0</TimeConstraints>
+    </Deposit>
 </Bank>

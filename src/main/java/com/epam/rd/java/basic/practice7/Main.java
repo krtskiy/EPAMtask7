@@ -25,6 +25,7 @@ public final class Main {
         domController.parse(true);
         Bank bank = domController.getBank();
 
+
         // sort by id
         Sorter.sortDepositsByDepositorsId(bank);
 

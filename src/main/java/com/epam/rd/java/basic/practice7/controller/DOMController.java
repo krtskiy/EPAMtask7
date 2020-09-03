@@ -43,14 +43,14 @@ public class DOMController {
     public void parse(boolean validate) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); // NOSONAR
         dbf.setNamespaceAware(true);
-        if (validate) {
-            try {
-                dbf.setFeature(Constants.FEATURE_TURN_VALIDATION_ON, true);
-                dbf.setFeature(Constants.FEATURE_TURN_SCHEMA_VALIDATION_ON, true);
-            } catch (ParserConfigurationException e) {
-                logger.severe(e.getMessage());
-            }
-        }
+//        if (validate) {
+//            try {
+//                dbf.setFeature(Constants.FEATURE_TURN_VALIDATION_ON, true);
+//                dbf.setFeature(Constants.FEATURE_TURN_SCHEMA_VALIDATION_ON, true);
+//            } catch (ParserConfigurationException e) {
+//                logger.severe(e.getMessage());
+//            }
+//        }
 
         try {
             DocumentBuilder db = dbf.newDocumentBuilder();
