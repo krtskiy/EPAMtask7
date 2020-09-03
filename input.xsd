@@ -43,7 +43,7 @@
                 </xsd:simpleType>
             </xsd:element>
             <xsd:element name="Profitability" type="xsd:double"/>
-            <xsd:element name="TimeConstraints" type="xsd:int"/>
+            <xsd:element name="TimeConstraints" type="xsd:double"/>
         </xsd:sequence>
     </xsd:complexType>
 </xsd:schema>
