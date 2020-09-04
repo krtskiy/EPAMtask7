@@ -26,7 +26,7 @@ public class Bank {
         }
         StringBuilder result = new StringBuilder();
         for (Deposit deposit : deposits) {
-            result.append(deposit).append('\n').append('\n');
+            result.append(deposit).append('\n');
         }
         return result.toString();
     }
