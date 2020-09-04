@@ -29,18 +29,9 @@ public class SAXController extends DefaultHandler {
         this.xmlFileName = xmlFileName;
     }
 
-    public void parse(boolean validate) {
+    public void parse() {
         SAXParserFactory factory = SAXParserFactory.newInstance(); // NOSONAR
         factory.setNamespaceAware(true);
-
-//        if (validate) {
-//            try {
-//                factory.setFeature(Constants.FEATURE_TURN_VALIDATION_ON, true);
-//                factory.setFeature(Constants.FEATURE_TURN_SCHEMA_VALIDATION_ON, true);
-//            } catch (ParserConfigurationException | SAXNotRecognizedException | SAXNotSupportedException e) {
-//                logger.severe(e.getMessage());
-//            }
-//        }
 
         SAXParser parser = null;
         try {

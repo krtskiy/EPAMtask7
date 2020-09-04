@@ -42,18 +42,9 @@ public class DOMController {
         return bank;
     }
 
-    public void parse(boolean validate) {
+    public void parse() {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); // NOSONAR
         dbf.setNamespaceAware(true);
-
-//        if (validate) {
-//            try {
-//                dbf.setFeature(Constants.FEATURE_TURN_VALIDATION_ON, true);
-//                dbf.setFeature(Constants.FEATURE_TURN_SCHEMA_VALIDATION_ON, true);
-//            } catch (ParserConfigurationException e) {
-//                logger.severe(e.getMessage());
-//            }
-//        }
 
         try {
             DocumentBuilder db = dbf.newDocumentBuilder();

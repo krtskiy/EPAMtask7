@@ -13,24 +13,12 @@ import java.util.Comparator;
  */
 public class Sorter {
 
-    /**
-     * Sorts deposits by depositors id.
-     */
     public static final Comparator<Deposit> SORT_DEPOSITS_BY_DEPOSITORS_ID = Comparator.comparingInt(Deposit::getDepositorId);
 
-    /**
-     * Sorts deposits by amount of the money.
-     */
     public static final Comparator<Deposit> SORT_DEPOSITS_BY_AMOUNT_OF_MONEY = Comparator.comparingDouble(Deposit::getAmountOnDeposit);
 
-    /**
-     * Sorts deposits by duration of the deposit.
-     */
     public static final Comparator<Deposit> SORT_DEPOSITS_BY_TIME_CONSTRAINTS = Comparator.comparingDouble(Deposit::getTimeConstraints);
 
-    /**
-     * Sorts deposits by profitability.
-     */
     public static final Comparator<Deposit> SORT_DEPOSITS_BY_PROFITABILITY = Comparator.comparingDouble(Deposit::getProfitability);
 
     public static final void sortDepositsByDepositorsId(Bank bank) {
@@ -48,9 +36,10 @@ public class Sorter {
         Collections.sort(bank.getDeposits(), SORT_DEPOSITS_BY_TIME_CONSTRAINTS);
     }
 
+    // just for test sorters
     public static void main(String[] args) {
         DOMController domController = new DOMController(Constants.VALID_XML_FILE);
-        domController.parse(true);
+        domController.parse();
         Bank bank = domController.getBank();
 
         System.out.println("~~~~~~~~~~ Default order ~~~~~~~~~~");
@@ -63,9 +52,6 @@ public class Sorter {
         System.out.println("~~~~~~~~~~ By profitability ~~~~~~~~~~");
         Sorter.sortDepositsByProfitability(bank);
         System.out.println(bank);
-
-
     }
-
 
 }
