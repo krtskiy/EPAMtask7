@@ -32,6 +32,7 @@ public class DOMController {
     private String xmlFileName;
     private Bank bank;
 
+    private static DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
     private static final Logger logger = Logger.getLogger("DOMController".getClass().getName());
 
     public DOMController(String xmlFileName) {
@@ -43,7 +44,6 @@ public class DOMController {
     }
 
     public void parse() {
-        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance(); // NOSONAR
         dbf.setNamespaceAware(true);
 
         try {

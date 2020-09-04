@@ -23,6 +23,7 @@ public class SAXController extends DefaultHandler {
     private Bank bank;
     private Deposit deposit;
 
+    private static SAXParserFactory factory = SAXParserFactory.newInstance();
     private static final Logger logger = Logger.getLogger("SAXController".getClass().getName());
 
     public SAXController(String xmlFileName) {
@@ -30,7 +31,6 @@ public class SAXController extends DefaultHandler {
     }
 
     public void parse() {
-        SAXParserFactory factory = SAXParserFactory.newInstance(); // NOSONAR
         factory.setNamespaceAware(true);
 
         SAXParser parser = null;

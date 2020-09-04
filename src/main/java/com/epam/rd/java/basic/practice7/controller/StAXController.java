@@ -22,6 +22,7 @@ public class StAXController {
     private String xmlFileName;
     private Bank bank;
 
+    private static XMLInputFactory factory = XMLInputFactory.newFactory();
     private static final Logger logger = Logger.getLogger("StAXController".getClass().getName());
 
     public Bank getBank() {
@@ -33,11 +34,10 @@ public class StAXController {
     }
 
 
-    public void parse() {
+    public void parse() { // NOSONAR
         Deposit deposit = null;
         String currentElement = null;
 
-        XMLInputFactory factory = XMLInputFactory.newFactory(); // NOSONAR
         factory.setProperty(XMLInputFactory.IS_NAMESPACE_AWARE, true);
 
         try {
@@ -56,12 +56,10 @@ public class StAXController {
 
                     if (XML.BANK.equalsTo(currentElement)) {
                         bank = new Bank();
-                        continue;
                     }
 
                     if (XML.DEPOSIT.equalsTo(currentElement)) {
                         deposit = new Deposit();
-                        continue;
                     }
                 }
 
@@ -70,37 +68,30 @@ public class StAXController {
 
                     if (XML.NAME.equalsTo(currentElement) && deposit != null) {
                         deposit.setBankName(characters.getData());
-                        continue;
                     }
 
                     if (XML.COUNTRY.equalsTo(currentElement) && deposit != null) {
                         deposit.setCountry(characters.getData());
-                        continue;
                     }
 
                     if (XML.DEPOSITOR.equalsTo(currentElement) && deposit != null) {
                         deposit.setDepositorName(characters.getData());
-                        continue;
                     }
 
                     if (XML.ACCOUNT_ID.equalsTo(currentElement) && deposit != null) {
                         deposit.setDepositorId(Integer.parseInt(characters.getData()));
-                        continue;
                     }
 
                     if (XML.TYPE.equalsTo(currentElement) && deposit != null) {
                         deposit.setDepositType(characters.getData());
-                        continue;
                     }
 
                     if (XML.AMOUNT_ON_DEPOSIT.equalsTo(currentElement) && deposit != null) {
                         deposit.setAmountOnDeposit(Double.parseDouble(characters.getData()));
-                        continue;
                     }
 
                     if (XML.PROFITABILITY.equalsTo(currentElement) && deposit != null) {
                         deposit.setProfitability(Double.parseDouble(characters.getData()));
-                        continue;
                     }
 
                     if (XML.TIME_CONSTRAINTS.equalsTo(currentElement) && deposit != null) {
